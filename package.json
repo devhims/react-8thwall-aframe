@@ -1,0 +1,35 @@
+{
+  "name": "react-8thwall-aframe",
+  "version": "1.0.0",
+  "description": "A React library for integrating 8th Wall WebAR",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepublishOnly": "npm run build",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "react",
+    "8th wall",
+    "webAR",
+    "augmented reality"
+  ],
+  "author": "Himanshu Gupta",
+  "license": "ISC",
+  "peerDependencies": {
+    "react": "^16.8.0 || ^17.0.0 || ^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.3",
+    "react": "^18.3.1",
+    "typescript": "^5.5.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/devhims/react-8thwall-aframe.git"
+  }
+}
