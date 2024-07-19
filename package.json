@@ -1,6 +1,6 @@
 {
   "name": "react-8thwall-aframe",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A React library for integrating 8th Wall WebAR",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
