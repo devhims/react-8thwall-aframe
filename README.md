@@ -67,7 +67,7 @@ function ARComponent() {
 }
 ```
 
-### useAFrameComponents Hook
+### 3. useAFrameComponents Hook
 
 The `useAFrameComponents` hook allows you to register custom A-Frame components easily. It follows a naming convention where the key in the components object is the name of the component (in kebab-case) as it will be used in A-Frame, and the value is the component object itself.
 
