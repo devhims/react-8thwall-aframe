@@ -103,6 +103,25 @@ function ARScene() {
 }
 ```
 
+## Examples
+
+This repository includes a sample Next.js 14 project demonstrating how to use `react-8thwall-aframe` library in a React application. To run the example:
+
+1. Clone this repository
+2. Navigate to the example directory: `cd react-8thwall-aframe/example`
+3. Install dependencies: `npm install`
+4. Start the development server: `npm run dev`
+
+**Note:** You'll need to provide your own 8th Wall API key in the example project's `layout.js` file and add the domain to list of authorised domains for the self-hosted project in 8thwall editor.
+
+Here are some examples of available using react-8thwall-aframe:
+
+1. **Animation Sample:** Explore 8th Wall WebAR animations in React
+2. **Custom Component:** Learn how to create custom A-Frame components
+3. **Interaction Example:** Discover interactive WebAR experiences
+
+Each of these examples demonstrates different aspects of WebAR development using `react-8thwall-aframe`, showcasing the package's capabilities in creating engaging and interactive AR content.
+
 ## API Reference
 
 ### XR8Scripts

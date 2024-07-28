@@ -1,0 +1,89 @@
+.joystick-container {
+  pointer-events: none;
+  opacity: 0;
+}
+
+.joystick-container.visible {
+  opacity: 1;
+}
+
+.joystick {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  border-radius: 10000px;
+  z-index: 5;
+}
+
+.joystick.position {
+  width: 15vmin;
+  height: 15vmin;
+  border: 2px solid white;
+  z-index: 10;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+}
+
+.joystick.origin {
+  width: 40vmin;
+  height: 40vmin;
+  border: 2px solid white;
+  box-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+}
+
+/* DESKTOP AND VR STYLES */
+@media (min-width: 320px) {
+}
+@media (min-width: 481px) {
+} /* portrait e-readers (Nook/Kindle), smaller tablets @ 600 or @ 640 wide. */
+@media (min-width: 641px) {
+  .joystick.position {
+    width: 8vmin;
+    height: 8vmin;
+    border: 2px solid white;
+    z-index: 10;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+  }
+
+  .joystick.origin {
+    width: 20vmin;
+    height: 20vmin;
+    border: 2px solid white;
+    box-shadow: 0px 0px 8px rgb(0 0 0 / 50%);
+  }
+}
+
+h3 {
+  text-align: center;
+  color: white;
+  font-family: 'Nunito', monospace;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.5);
+
+  z-index: 10;
+  position: absolute;
+  bottom: 0vh;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+
+#recenterBtn {
+  position: absolute;
+  z-index: 5;
+  left: 1vh;
+  bottom: 1vh;
+  max-width: 12vw;
+  rotate: -90deg;
+}
+
+.pulse-once {
+  animation: pulse-once 0.2s cubic-bezier(0.785, 0.135, 0.15, 0.86) both;
+}
+@keyframes pulse-once {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.8);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
