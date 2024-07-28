@@ -14,10 +14,7 @@ const ProjectCard = ({ project }) => {
   };
 
   return (
-    <div
-      className='bg-white overflow-hidden shadow rounded-lg hover:shadow-md transition-shadow duration-300 flex flex-col h-full cursor-pointer'
-      onClick={handleClick}
-    >
+    <div className='bg-white overflow-hidden shadow rounded-lg hover:shadow-md transition-shadow duration-300 flex flex-col h-full cursor-pointer'>
       <div className='h-48 w-full bg-gray-100 relative'>
         <model-viewer
           src={project.model}
@@ -41,9 +38,12 @@ const ProjectCard = ({ project }) => {
         <p className='text-sm text-gray-500'>{project.description}</p>
       </div>
       <div className='bg-gray-50 px-4 py-3 mt-auto'>
-        <span className='text-sm font-medium text-indigo-600 hover:text-indigo-500'>
+        <a
+          href={project.href}
+          className='text-sm font-medium text-indigo-600 hover:text-indigo-500'
+        >
           Explore example &rarr;
-        </span>
+        </a>
       </div>
     </div>
   );

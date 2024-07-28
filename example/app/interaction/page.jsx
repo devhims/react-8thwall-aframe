@@ -21,7 +21,7 @@ const Interaction = () => {
   const componentsRegistered = useAFrameComponents(components);
 
   if (!xrReady || !componentsRegistered) {
-    return <div>Loading...</div>;
+    return <div>Loading XR...</div>;
   }
 
   return (
