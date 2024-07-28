@@ -1,4 +1,4 @@
-# react-8thwall
+# react-8thwall-aframe
 
 A lightweight package to integrate 8th Wall WebAR capabilities into React applications. This package streamlines the process of including necessary scripts, managing script loading states, and registering A-Frame components, making it easier to create engaging WebAR experiences in React apps.
 
