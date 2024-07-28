@@ -15,7 +15,7 @@ const CustomComponent = () => {
   const componentsRegistered = useAFrameComponents(components);
 
   if (!xrReady || !componentsRegistered) {
-    return <div>Loading...</div>;
+    return <div className='loading-overlay'>Loading XR...</div>;
   }
   return (
     <a-scene

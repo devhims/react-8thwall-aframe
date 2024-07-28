@@ -5,7 +5,7 @@ import { useXR8Ready } from 'react-8thwall-aframe';
 const AnimationSample = () => {
   const { xrReady, dracoReady } = useXR8Ready();
   if (!xrReady || !dracoReady) {
-    return <div>Loading...</div>;
+    return <div className='loading-overlay'>Loading XR...</div>;
   }
   return (
     <a-scene
