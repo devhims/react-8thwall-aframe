@@ -1,10 +1,23 @@
+'use client';
+
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 const ProjectCard = ({ project }) => {
+  const router = useRouter();
+
+  const handleClick = (e) => {
+    e.preventDefault();
+    router.push(project.href);
+  };
+
   return (
-    <div className='bg-white overflow-hidden shadow rounded-lg hover:shadow-md transition-shadow duration-300 flex flex-col h-full'>
+    <div
+      className='bg-white overflow-hidden shadow rounded-lg hover:shadow-md transition-shadow duration-300 flex flex-col h-full cursor-pointer'
+      onClick={handleClick}
+    >
       <div className='h-48 w-full bg-gray-100 relative'>
         <model-viewer
           src={project.model}
@@ -28,20 +41,16 @@ const ProjectCard = ({ project }) => {
         <p className='text-sm text-gray-500'>{project.description}</p>
       </div>
       <div className='bg-gray-50 px-4 py-3 mt-auto'>
-        <a
-          href={project.href}
-          className='text-sm font-medium text-indigo-600 hover:text-indigo-500'
-          target='_blank'
-          rel='noopener noreferrer'
-        >
+        <span className='text-sm font-medium text-indigo-600 hover:text-indigo-500'>
           Explore example &rarr;
-        </a>
+        </span>
       </div>
     </div>
   );
 };
 
 export default function Home() {
+  const router = useRouter();
   const projects = [
     {
       title: 'Animation Sample',
@@ -77,7 +86,7 @@ export default function Home() {
         </h2>
 
         <div className='flex justify-center space-x-6 mb-12'>
-          <Link
+          <a
             href='https://github.com/devhims/react-8thwall-aframe'
             target='_blank'
             rel='noopener noreferrer'
@@ -91,8 +100,8 @@ export default function Home() {
               className='mr-2'
             />
             GitHub
-          </Link>
-          <Link
+          </a>
+          <a
             href='https://www.npmjs.com/package/react-8thwall-aframe'
             target='_blank'
             rel='noopener noreferrer'
@@ -106,7 +115,7 @@ export default function Home() {
               className='mr-2'
             />
             npm
-          </Link>
+          </a>
         </div>
 
         <div className='grid md:grid-cols-3 gap-8'>
