@@ -28,14 +28,14 @@ const ProjectCard = ({ project }) => {
         <p className='text-sm text-gray-500'>{project.description}</p>
       </div>
       <div className='bg-gray-50 px-4 py-3 mt-auto'>
-        <Link
+        <a
           href={project.href}
           className='text-sm font-medium text-indigo-600 hover:text-indigo-500'
           target='_blank'
           rel='noopener noreferrer'
         >
           Explore example &rarr;
-        </Link>
+        </a>
       </div>
     </div>
   );
