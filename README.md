@@ -2,12 +2,16 @@
 
 A lightweight package to integrate 8th Wall WebAR capabilities into React applications. This package streamlines the process of including necessary scripts, managing script loading states, and registering A-Frame components, making it easier to create engaging WebAR experiences in React apps.
 
+[![react-8thwall-aframe Demo](./assets/poster.jpg)](https://youtube.com/shorts/sXDya3YJcFs?feature=share 'react-8thwall-aframe Demo')
+
 ## Features
 
 - Easy integration of 8th Wall and other 3d scripts in React applications
 - Hooks for managing WebAR script loading states and Aframe component registration
 - Built-in support for custom Draco compressed gltf/glb models
 - TypeScript batteries included 🔋
+
+[Watch Demo on YouTube](https://youtube.com/shorts/sXDya3YJcFs?feature=share)
 
 ## Installation
 
